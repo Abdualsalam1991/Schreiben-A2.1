@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Schreiben A2.1: Zusagen und Absagen per WhatsApp</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#f3f5f9;--sf:#fff;--tx:#1d2433;--mu:#5d667a;--ac:#2f5bd8;--ac2:#e3e9fb;--bd:#cdd4e3;--ok:#157a43;--no:#b3261e;--bub:#d8f3dc}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12161f;--sf:#1b2130;--tx:#e8ecf5;--mu:#a0a9bd;--ac:#8aa6ff;--ac2:#27304a;--bd:#344060;--ok:#5fd38f;--no:#ff8a80;--bub:#1f3d2b}}
+:root[data-theme="dark"]{--bg:#12161f;--sf:#1b2130;--tx:#e8ecf5;--mu:#a0a9bd;--ac:#8aa6ff;--ac2:#27304a;--bd:#344060;--ok:#5fd38f;--no:#ff8a80;--bub:#1f3d2b}
+*{box-sizing:border-box}html{color-scheme:light dark;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:17px/1.55 system-ui,"Segoe UI",Roboto,Arial,sans-serif}
+main{max-width:760px;margin:0 auto;padding:16px}
+h1{font-size:1.5rem;margin:.3em 0 .1em}h2{font-size:1.2rem;margin:1em 0 .3em}p{margin:.4em 0}.sub{color:var(--mu)}
+nav{display:flex;gap:6px;overflow-x:auto;padding:8px 0;position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:2}
+nav button{font:inherit;font-size:.9rem;white-space:nowrap;border:1px solid var(--bd);background:var(--sf);color:var(--tx);padding:7px 12px;border-radius:20px;cursor:pointer}
+nav button[aria-current=true]{background:var(--ac);color:#fff;border-color:var(--ac)}
+section{display:none}section.on{display:block}
+.box{background:var(--sf);border:1px solid var(--bd);border-radius:10px;padding:12px 14px;margin:10px 0}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:8px 0}.row .t{flex:1 1 260px}
+select,input[type=text],textarea{font:inherit;font-size:.95rem;background:var(--bg);color:var(--tx);border:1px solid var(--bd);border-radius:6px;padding:6px 8px;max-width:100%}
+input[type=text]{width:100%}textarea{width:100%;min-height:170px}
+.btn{font:inherit;font-size:.95rem;background:var(--ac);color:#fff;border:0;border-radius:8px;padding:8px 16px;cursor:pointer}
+.btn.g{background:var(--ac2);color:var(--tx)}.btn.s{padding:2px 10px}
+button:focus-visible,select:focus-visible,textarea:focus-visible,input:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
+.ok{color:var(--ok);font-weight:bold}.no{color:var(--no);font-weight:bold}
+.bub{background:var(--bub);border-radius:12px 12px 12px 2px;padding:10px 14px;margin:8px 0;max-width:92%}
+label.c{display:block;margin:4px 0}
+</style>
+</head>
+<body>
+<main>
+<h1>Schreiben A2.1: Zusagen und Absagen per WhatsApp</h1>
+<p class="sub">Übungen zur Vorbereitung auf die Prüfung</p>
+<nav id="nav"></nav>
+
+<section id="p0">
+<h2>1 Was passt zusammen?</h2>
+<p>Lies die Nachrichten A bis D. Welche Antwort passt zu welcher Nachricht?</p>
+<div id="ms"></div><div id="zr"></div>
+<div class="row"><button class="btn" id="zc">Prüfen</button><span id="zrr"></span></div>
+</section>
+
+<section id="p1">
+<h2>2 Aufbau: Bring die Teile in die richtige Reihenfolge</h2>
+<p>Benutze die Pfeile. Eine Nachricht hat diesen Aufbau: Anrede, Reaktion, Grund, Vorschlag, Gruß, Name.</p>
+<div id="ro"></div>
+</section>
+
+<section id="p2">
+<h2>3 Anrede und Großschreibung</h2>
+<div class="box"><b>Merke:</b> Nach der Anrede steht ein Komma. Danach schreibst du klein weiter. Nomen schreibst du groß: <i>Fußball, Samstag, Prüfung</i>.</div>
+<div id="q1"></div>
+</section>
+
+<section id="p3">
+<h2>4 Redemittel</h2>
+<div class="box"><b>Höflich vorschlagen:</b> <i>Wir könnten ins Kino gehen. · Wir sollten uns bald treffen. · Ich würde gern kommen, aber …</i> (könnten, sollten, würde = Konjunktiv II)</div>
+<p>Wähle für jeden Satz die richtige Gruppe.</p>
+<div id="rm"></div>
+<div class="row"><button class="btn" id="rmc">Prüfen</button><span id="rmr"></span></div>
+</section>
+
+<section id="p4">
+<h2>5 Sätze verbinden: weil, dass, wenn</h2>
+<div class="box"><b>Merke:</b> Nach <i>weil</i>, <i>dass</i> und <i>wenn</i> steht das Verb am <b>Ende</b>.<br><i>Ich bleibe zu Hause, weil ich krank bin. · Ich finde es schade, dass du nicht kommst. · Ich komme, wenn ich Zeit habe.</i></div><p>Verbinde die Sätze mit dem Wort in der Klammer. Beginne mit dem ersten Satz.</p>
+<div id="wl"></div>
+<div class="row"><button class="btn" id="wlc">Prüfen</button><span id="wlr"></span></div>
+</section>
+
+<section id="p5">
+<h2>6 Lückentext: Welches Redemittel passt?</h2>
+<p>Wähle für jede Lücke das passende Redemittel. Eines passt nicht.</p>
+<div id="gp"></div>
+</section>
+
+<section id="p6">
+<h2>7 Schreibaufgabe</h2>
+<div class="row"><label for="tk">Aufgabe:</label><select id="tk"></select></div>
+<div class="bub" id="msg"></div>
+<div class="box" id="pts"></div>
+<textarea id="tx" aria-label="Deine Nachricht" placeholder="Schreibe hier deine WhatsApp-Nachricht …"></textarea>
+<div class="row"><span id="wc" class="sub">0 Wörter</span></div>
+<div class="box"><b>Tipp:</b> Schreibe 40 bis 60 Wörter. Benutze weil, dass oder wenn. Mache einen Vorschlag mit <i>könnten</i> oder <i>sollten</i>, z. B. „Wir könnten ins Kino gehen.“</div>
+<div class="box"><b>Checkliste</b>
+<label class="c"><input type="checkbox"> Anrede mit Komma, danach klein weiter</label>
+<label class="c"><input type="checkbox"> Alle vier Punkte beantwortet</label>
+<label class="c"><input type="checkbox"> Ein Nebensatz mit weil, dass oder wenn (Verb am Ende)</label>
+<label class="c"><input type="checkbox"> Nomen groß geschrieben</label>
+<label class="c"><input type="checkbox"> Gruß und Name am Ende</label>
+<p id="cr" class="sub"></p></div>
+</section>
+</main>
+<script>
+const $=s=>document.querySelector(s);
+const tabs=["1 Zuordnen","2 Aufbau","3 Anrede und Groß","4 Redemittel","5 Sätze verbinden","6 Lückentext","7 Schreiben"];
+tabs.forEach((t,i)=>{const b=document.createElement("button");b.textContent=t;b.onclick=()=>go(i);$("#nav").appendChild(b)});
+function go(i){tabs.forEach((_,j)=>{$("#p"+j).classList.toggle("on",i==j);$("#nav").children[j].setAttribute("aria-current",i==j)});scrollTo(0,0)}
+go(0);
+const opt=l=>"<option value=''>– wählen –</option>"+l.map((c,j)=>"<option value="+j+">"+c+"</option>").join("");
+const mark=(el,ok)=>{el.textContent=ok?"✓":"✗";el.className=ok?"ok":"no"};
+// 1 Zuordnen
+const M=["„Hey! Ich habe Tickets für ein Fußballspiel am Samstag. Hast du Lust mitzukommen?“ (Omar)","„Hallo! Am Sonntag mache ich eine kleine Grillparty bei mir zu Hause. Kommst du?“ (Lina)","„Hey! Ich gehe morgen Abend mit ein paar Freunden ins Restaurant essen. Hast du Lust mitzukommen?“ (Samir)","„Wir waren in der Bibliothek und Lina hat vorgeschlagen, dass wir am Wochenende im Wadi Mujib wandern gehen. Kommst du mit?“ (Yusra)"];
+const L="ABCD";
+M.forEach((m,i)=>{const d=document.createElement("div");d.className="bub";d.innerHTML="<b>"+L[i]+"</b> "+m;$("#ms").appendChild(d)});
+const Z=[["Vielen Dank! Leider kann ich nicht kommen. Ich muss für eine Prüfung lernen. Es tut mir leid. Vielleicht können wir uns nächste Woche treffen?",1],["Gern! Ich wandere gern, weil ich die Natur mag. Ich nehme Wasser mit. Wollen wir uns am Samstag um 8 Uhr treffen?",3],["Super Idee! Ich komme gerne mit. Ich mag Fußball sehr. Ich bringe Snacks und Getränke mit.",0],["Danke, aber ich kann morgen nicht kommen. Ich habe Besuch von meiner Familie. Das ist schade! Können wir uns am Freitag treffen?",2]];
+Z.forEach(([t])=>{const d=document.createElement("div");d.className="row box";d.innerHTML="<span class='t'>"+t+"</span><select aria-label='Nachricht'>"+opt(["A","B","C","D"])+"</select><b></b>";$("#zr").appendChild(d)});
+$("#zc").onclick=()=>{let n=0;[...$("#zr").children].forEach((d,i)=>{const ok=d.querySelector("select").value!==""&&+d.querySelector("select").value===Z[i][1];n+=ok;mark(d.querySelector("b"),ok)});$("#zrr").textContent=n+" von 4 richtig"};
+// 2 Aufbau
+const A=[["Lina: Absage",["Hallo Lina,","vielen Dank für die Einladung! Ich finde es toll, dass du eine Grillparty machst.","Leider kann ich am Sonntag nicht kommen, weil ich für eine Prüfung lernen muss.","Es tut mir leid. Ich finde es schade, dass ich nicht dabei sein kann.","Vielleicht können wir uns nächsten Mittwoch treffen? Wir könnten ins Kino gehen oder zusammen essen.","Liebe Grüße<br>Fatima"]],["Omar: Zusage",["Hey Omar,","super Idee! Ich komme gerne mit. Ich freue mich, dass du Tickets hast.","Ich mag Fußball sehr, weil es spannend ist. Ich gehe oft ins Stadion, wenn meine Mannschaft spielt.","Ich kann Snacks und Getränke mitbringen.","Wollen wir uns am Samstag um 16:00 Uhr vor dem Stadion treffen? Wir könnten vorher noch etwas essen.","LG<br>Khaled"]]];
+A.forEach(([ti,p])=>{const box=document.createElement("div");box.className="box";let ord=p.map((_,i)=>i).sort(()=>Math.random()-.5);if(ord.every((v,i)=>v==i))ord.reverse();
+const list=document.createElement("div"),res=document.createElement("span"),btn=document.createElement("button");btn.className="btn";btn.textContent="Prüfen";
+function draw(){list.innerHTML="";ord.forEach((k,i)=>{const r=document.createElement("div");r.className="row";r.innerHTML="<span class='t'>"+p[k]+"</span>";[["↑",-1],["↓",1]].forEach(([s,dx])=>{const b=document.createElement("button");b.className="btn g s";b.textContent=s;b.setAttribute("aria-label",s=="↑"?"nach oben":"nach unten");b.onclick=()=>{const j=i+dx;if(j<0||j>=ord.length)return;[ord[i],ord[j]]=[ord[j],ord[i]];res.textContent="";draw()};r.appendChild(b)});list.appendChild(r)})}
+btn.onclick=()=>{const ok=ord.every((v,i)=>v==i);res.innerHTML=ok?"<span class='ok'>Richtig!</span>":"<span class='no'>Noch nicht richtig. Denk an: Anrede, Reaktion, Grund, Vorschlag, Gruß.</span>"};
+box.innerHTML="<b>"+ti+"</b>";box.append(list,btn,res);draw();$("#ro").appendChild(box)});
+// 3 Quiz
+const Q=[["Welche Anrede ist richtig?",["Hallo Lina,","hallo Lina","Hallo Lina."],0],["Wie geht es nach der Anrede weiter?",["Hallo Lina, Vielen Dank für die Einladung!","Hallo Lina, vielen Dank für die Einladung!"],1],["Welcher Satz ist richtig?",["Ich mag fußball sehr.","Ich mag Fußball sehr.","ich mag Fußball sehr."],1],["Welcher Satz ist richtig?",["Wir treffen uns am samstag.","Wir treffen uns am Samstag."],1],["Welcher Gruß passt zu einer Nachricht an Freunde?",["Mit freundlichen Grüßen","Liebe Grüße","Hochachtungsvoll"],1]];
+Q.forEach(([q,o,a])=>{const d=document.createElement("div");d.className="box";d.innerHTML="<b>"+q+"</b><div class='row'></div><span></span>";o.forEach((x,j)=>{const b=document.createElement("button");b.className="btn g";b.textContent=x;b.onclick=()=>{d.querySelector("span").innerHTML=j==a?"<span class='ok'>Richtig!</span>":"<span class='no'>Nicht ganz. Versuche es noch einmal.</span>"};d.querySelector(".row").appendChild(b)});$("#q1").appendChild(d)});
+// 4 Redemittel
+const C=["Zustimmen","Absagen","Bedauern ausdrücken","Vorschlag machen"];
+const R=[["Super Idee! Ich komme gerne mit.",0],["Ja, gern! Da bin ich dabei.",0],["Ich freue mich, dass du mich einlädst.",0],["Leider kann ich nicht kommen.",1],["Ich kann am Sonntag leider nicht.",1],["Danke, aber ich habe keine Zeit.",1],["Es tut mir leid.",2],["Ich finde es schade, dass ich nicht kommen kann.",2],["Ich würde gern kommen, aber ich kann nicht.",2],["Wollen wir uns um 16:00 Uhr vor dem Stadion treffen?",3],["Vielleicht können wir uns nächsten Mittwoch treffen?",3],["Wir könnten ins Kino gehen.",3],["Wir könnten zusammen essen gehen.",3],["Wir sollten uns bald treffen.",3]];
+R.forEach(([t])=>{const d=document.createElement("div");d.className="row";d.innerHTML="<span class='t'>"+t+"</span><select aria-label='Gruppe'>"+opt(C)+"</select><b></b>";$("#rm").appendChild(d)});
+$("#rmc").onclick=()=>{let n=0;[...$("#rm").children].forEach((d,i)=>{const v=d.querySelector("select").value,ok=v!==""&&+v===R[i][1];n+=ok;mark(d.querySelector("b"),ok)});$("#rmr").textContent=n+" von "+R.length+" richtig"};
+// 5 weil
+const W=[["Ich kann nicht kommen. Ich muss lernen. (weil)","Ich kann nicht kommen, weil ich lernen muss."],["Ich komme gern mit. Ich mag Fußball. (weil)","Ich komme gern mit, weil ich Fußball mag."],["Ich finde es schade. Ich kann nicht kommen. (dass)","Ich finde es schade, dass ich nicht kommen kann."],["Ich freue mich. Du lädst mich ein. (dass)","Ich freue mich, dass du mich einlädst."],["Ich komme gern mit. Ich habe Zeit. (wenn)","Ich komme gern mit, wenn ich Zeit habe."],["Wir gehen ins Kino. Das Wetter ist schlecht. (wenn)","Wir gehen ins Kino, wenn das Wetter schlecht ist."]];
+const nz=s=>s.toLowerCase().replace(/[.,!]/g,"").replace(/\s+/g," ").trim();
+W.forEach(([a])=>{const d=document.createElement("div");d.className="box";d.innerHTML="<p>"+a+"</p><input type='text' aria-label='Dein Satz mit weil' placeholder='Schreibe den Satz'><p></p>";$("#wl").appendChild(d)});
+$("#wlc").onclick=()=>{let n=0;[...$("#wl").children].forEach((d,i)=>{const ok=nz(d.querySelector("input").value)===nz(W[i][1]);n+=ok;d.lastChild.innerHTML=ok?"<span class='ok'>Richtig!</span>":"<span class='no'>Lösung:</span> "+W[i][1]});$("#wlr").textContent=n+" von "+W.length+" richtig"};
+// 6 Lückentext
+const G=[{p:["Hallo Samir,<br>",0," ",1," weil ich Besuch habe. ",2," ",3," ",4,"<br>",5,"<br>Ali"],b:["Wir könnten ins Kino gehen.","Liebe Grüße","Super Idee! Ich komme gern mit.","Ich finde es schade, dass ich nicht dabei sein kann.","Leider kann ich morgen nicht kommen,","Vielleicht können wir uns am Freitag treffen?","Danke für die Einladung!"],a:[6,4,3,5,0,1]},{p:["Hallo Yusra,<br>",0," ",1," Ich wandere gern, weil ich die Natur mag. ",2," ",3," ",4,"<br>",5,"<br>Sara"],b:["Wir sollten früh losgehen, weil es mittags heiß ist.","LG","Leider kann ich nicht kommen.","Ich nehme Wasser und Obst mit.","Super Idee!","Wollen wir uns am Samstag um 8 Uhr vor der Bibliothek treffen?","Ich komme gern mit, wenn das Wetter schön ist."],a:[4,6,3,5,0,1]}];
+G.forEach(g=>{const box=document.createElement("div");box.className="box";const t=document.createElement("p");t.innerHTML=g.p.map(x=>typeof x=="number"?"<select aria-label='Lücke'>"+opt(g.b)+"</select><b></b>":x).join("");const btn=document.createElement("button");btn.className="btn";btn.textContent="Prüfen";const r=document.createElement("span");
+btn.onclick=()=>{let n=0;[...t.querySelectorAll("select")].forEach((s,i)=>{const ok=s.value!==""&&+s.value===g.a[i];n+=ok;mark(s.nextElementSibling,ok)});r.textContent=" "+n+" von "+g.a.length+" richtig"};
+box.append(t,btn,r);$("#gp").appendChild(box)});
+// 7 Schreiben
+const T=[["Omar schreibt: „Hey! Ich habe Tickets für ein Fußballspiel am Samstag. Hast du Lust mitzukommen?“",["Stimmen Sie dem Vorschlag zu.","Schreiben Sie, warum Sie Fußball mögen.","Schreiben Sie, was Sie mitbringen (z. B. Snacks, Getränke).","Machen Sie einen Vorschlag für einen Treffpunkt: Wann und wo?"]],["Lina schreibt: „Hallo! Am Sonntag mache ich eine kleine Grillparty bei mir zu Hause. Kommst du?“",["Sagen Sie höflich ab.","Schreiben Sie den Grund (z. B. keine Zeit, Familie, Prüfung).","Bedauern Sie, dass Sie nicht kommen können.","Machen Sie einen neuen Vorschlag: Wann können Sie sich treffen und was können Sie zusammen machen?"]],["Samir schreibt: „Hey! Ich gehe morgen Abend mit ein paar Freunden ins Restaurant essen. Hast du Lust mitzukommen?“",["Sagen Sie höflich ab.","Schreiben Sie den Grund.","Bedauern Sie, dass Sie nicht kommen können.","Machen Sie einen neuen Vorschlag für ein Treffen: Wann und wohin gehen Sie?"]],["Yusra schreibt: „Wir waren in der Bibliothek und Lina hat vorgeschlagen, dass wir am Wochenende im Wadi Mujib wandern gehen. Kommst du mit?“",["Stimmen Sie dem Vorschlag zu.","Schreiben Sie, warum Sie gerne wandern.","Schreiben Sie, was Sie mitnehmen möchten.","Machen Sie einen Vorschlag für einen Treffpunkt: Wann und wo?"]]];
+T.forEach((t,i)=>{const o=document.createElement("option");o.value=i;o.textContent=t[0].split(" schreibt")[0];$("#tk").appendChild(o)});
+function load(){const t=T[$("#tk").value];$("#msg").textContent=t[0];$("#pts").innerHTML="<b>Schreiben Sie eine WhatsApp-Nachricht. Beantworten Sie alle vier Punkte:</b><ul>"+t[1].map(x=>"<li>"+x+"</li>").join("")+"</ul>";$("#tx").value="";cnt()}
+function cnt(){$("#wc").textContent=($("#tx").value.trim()?$("#tx").value.trim().split(/\s+/).length:0)+" Wörter"}
+$("#tk").onchange=load;$("#tx").oninput=cnt;
+document.querySelectorAll("#p6 .c input").forEach(c=>c.onchange=()=>{const n=document.querySelectorAll("#p6 .c input:checked").length;$("#cr").textContent=n==5?"Sehr gut! Alles geprüft.":n+" von 5 geprüft"});
+load();
+</script>
+</body>
+</html>
